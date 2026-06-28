@@ -3,56 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem - RDA Software</title>
+    <title>RDA Software</title>
+    <style>
+        /* CSS Embutido para garantir que nada quebre ou suma */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #050505; color: #FFFFFF; font-family: sans-serif; overflow-x: hidden; }
+        
+        /* O BANNER DO TOPO - Força a imagem a esticar 100% na largura em qualquer tela */
+        .banner-topo {
+            width: 100%;
+            height: auto;
+            min-height: 380px;
+            background-image: linear-gradient(180deg, rgba(5,5,5,0.2) 0%, #050505 100%), url("assets/img/banner/hero-banner.webp");
+            background-size: 100% 100%; /* Força o esticamento horizontal e vertical completo aos cantos */
+            background-repeat: no-repeat;
+            background-position: top center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-superior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(11, 15, 20, 0.7);
+        }
+
+        .menu-superior ul { display: flex; gap: 30px; list-style: none; }
+        .menu-superior a { color: #FFFFFF; text-decoration: none; font-weight: bold; }
+
+        .conteudo-banner {
+            max-width: 800px;
+            margin: auto auto 40px 40px;
+            padding: 20px;
+        }
+
+        .conteudo-banner h1 { font-size: 2.5rem; margin-bottom: 15px; font-weight: 800; line-height: 1.2; }
+        .conteudo-banner p { color: #B8C2CC; font-size: 1.1rem; margin-bottom: 25px; max-width: 600px; }
+        .botao { display: inline-block; background-color: #2F80ED; color: #FFFFFF; padding: 14px 28px; text-decoration: none; font-weight: bold; border-radius: 6px; }
+    </style>
 </head>
-<body style="background-color: #050505; color: #FFFFFF; font-family: sans-serif; margin: 0; padding: 0;">
+<body>
 
-    <table width="100%" cellpadding="20" cellspacing="0" style="background-color: #0B0F14;">
-        <tr>
-            <td>
-                <h2 style="margin: 0;">RDA SOFTWARE</h2>
-            </td>
-            <td align="right">
-                <a href="#inicio" style="color: #FFFFFF; text-decoration: none; margin-right: 20px;">Início</a>
-                <a href="#solucoes" style="color: #FFFFFF; text-decoration: none; margin-right: 20px;">Soluções</a>
-                <a href="#sobre" style="color: #FFFFFF; text-decoration: none;">Sobre</a>
-            </td>
-        </tr>
-    </table>
-        <div id="inicio" style="padding: 20px; text-align: center;">
-        
-        <h1 style="font-size: 2rem; margin-top: 20px; color: #56A8FF;">
-            TECNOLOGIA QUE TRANSFORMA IDEIAS EM SOLUÇÕES
-        </h1>
-        
-        <p style="color: #B8C2CC; max-width: 600px; margin: 20px auto; line-height: 1.6;">
-            Desenvolvimento de software corporativo com foco absoluto em qualidade, desempenho e inovação.
-        </p>
+    <section class="banner-topo">
+        <header class="menu-superior">
+            <h2>RDA SOFTWARE</h2>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Soluções</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </header>
 
-        <div style="margin: 30px 0;">
-            <img src="assets/img/banner/hero-banner.webp" alt="Banner RDA" style="width: 100%; max-width: 800px; height: auto; border: 2px solid #232C38; border-radius: 8px;">
+        <div class="conteudo-banner">
+            <h1>TECNOLOGIA QUE TRANSFORMA<br>IDEIAS EM SOLUÇÕES</h1>
+            <p>Desenvolvimento de software corporativo com foco absoluto em qualidade, desempenho e inovação.</p>
+            <a href="#" class="botao">Conhecer Soluções</a>
         </div>
+    </section>
+        /* Continuação do arquivo index.html */
+    <style>
+        .grid-pilares {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card-pilar {
+            background-color: #121821;
+            border: 1px solid #232C38;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .card-pilar h3 { margin-bottom: 10px; color: #FFFFFF; }
+        .card-pilar p { color: #B8C2CC; line-height: 1.6; }
+    </style>
 
-        <a href="#solucoes" style="display: inline-block; background-color: #2F80ED; color: #FFFFFF; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 8px;">
-            Conhecer Soluções
-        </a>
-        </div>
-            <div id="solucoes" style="padding: 60px 20px; background-color: #0B0F14; text-align: center;">
-        <h2>Nossos Pilares</h2>
-        <br>
-        <div style="max-width: 600px; margin: 0 auto; text-align: left; background-color: #121821; padding: 20px; border-radius: 8px; border: 1px solid #232C38; margin-bottom: 20px;">
+    <main class="grid-pilares">
+        <div class="card-pilar">
             <h3>🎯 FOCO EM RESULTADOS</h3>
-            <p style="color: #B8C2CC;">Soluções estratégicas desenhadas sob medida para gerar valor real.</p>
+            <p>Soluções estratégicas desenhadas sob medida para gerar valor real e otimizar processos.</p>
         </div>
-        <div style="max-width: 600px; margin: 0 auto; text-align: left; background-color: #121821; padding: 20px; border-radius: 8px; border: 1px solid #232C38;">
+        <div class="card-pilar">
             <h3>🛡️ QUALIDADE GARANTIDA</h3>
-            <p style="color: #B8C2CC;">Código limpo, arquitetura escalável e aderência às melhores práticas.</p>
+            <p>Código limpo, arquitetura escalável e aderência às melhores práticas de engenharia.</p>
         </div>
-    </div>
+    </main>
 
-    <div style="background-color: #020202; padding: 20px; text-align: center; border-top: 1px solid #232C38; color: #7D8794; font-size: 0.9rem;">
+    <footer style="background-color: #020202; padding: 25px; text-align: center; color: #7D8794; border-top: 1px solid #232C38;">
         &copy; 2026 RDA Software. Todos os direitos reservados.
-    </div>
+    </footer>
 
 </body>
 </html>
+
+
+    
