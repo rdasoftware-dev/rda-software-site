@@ -3,77 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RDA Software - Tecnologia que Transforma</title>
+    <title>RDA Software | Tecnologia que Transforma Ideias em Soluções</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2 family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo-text">RDA <span>Software</span></div>
-            <nav class="nav-menu">
-                <a href="#inicio" class="nav-link active">Início</a>
-                <a href="#solucoes" class="nav-link">Soluções</a>
-                <a href="#sobre" class="nav-link">Sobre Nós</a>
-                <a href="#contato" class="nav-btn">Contato</a>
-            </nav>
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+    <section class="hero" id="inicio">
+        
+        <header class="menu">
+            <div class="logo-container">
+                <a href="#inicio" style="text-decoration: none;">
+                    <h2 style="color: #FFFFFF; font-weight: 800; letter-spacing: 1px;">RD<span style="color: var(--primary-hover);">A</span></h2>
+                    <p style="color: var(--text-secondary); font-size: 0.6rem; letter-spacing: 3px; font-weight: 600;">SOFTWARE</p>
+                </a>
+            </div>
+            
+            <ul id="menuList">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </header>
+
+        <div class="hero-content">
+            <h1>
+                TECNOLOGIA QUE <br>
+                <span style="color: var(--primary-hover);">TRANSFORMA IDEIAS</span> <br>
+                EM SOLUÇÕES.
+            </h1>
+            <p>
+                Desenvolvimento de software corporativo com foco absoluto em qualidade, desempenho e inovação. Construímos o ecossistema digital do seu negócio.
+            </p>
+            <a href="#solucoes" class="button">Conhecer Soluções</a>
         </div>
-    </header>
 
-    <main>
-        <section id="inicio" class="hero-banner">
-            <div class="hero-overlay"></div>
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        TECNOLOGIA QUE <br>
-                        <span class="text-blue-gradient">TRANSFORMA IDEIAS</span> <br>
-                        EM SOLUÇÕES.
-                    </h1>
-                    <p class="hero-description">
-                        Desenvolvimento de software com foco em <span class="highlight-blue">qualidade</span>, <span class="highlight-blue">desempenho</span> e <span class="highlight-blue">inovação</span>.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#solucoes" class="btn-primary">Nossas Soluções</a>
-                    </div>
+    </section>
+
+    <section class="secao-adicional" id="solucoes">
+        <div class="conteudo-auxiliar">
+            <h2 class="titulo-secao">NOSSOS PILARES</h2>
+            <div class="grid-cards">
+                <div class="card">
+                    <h3>🎯 FOCO EM RESULTADOS</h3>
+                    <p>Soluções estratégicas desenhadas sob medida para gerar valor real e otimizar processos.</p>
+                </div>
+                <div class="card">
+                    <h3>🛡️ QUALIDADE GARANTIDA</h3>
+                    <p>Código limpo, arquitetura escalável e aderência estrita às melhores práticas de engenharia.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="solucoes" class="features-section">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3 class="feature-title">FOCO EM RESULTADOS</h3>
-                    <p class="feature-text">Soluções que geram valor real para o seu negócio.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h3 class="feature-title">QUALIDADE GARANTIDA</h3>
-                    <p class="feature-text">Código limpo, testes e as melhores práticas do mercado.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3 class="feature-title">INOVAÇÃO CONSTANTE</h3>
-                    <p class="feature-text">Tecnologias modernas para impulsionar seu crescimento.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3 class="feature-title">PARCERIA E CONFIANÇA</h3>
-                    <p class="feature-text">Transparência, comunicação e compromisso com você.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section class="secao-adicional" id="sobre" style="background: var(--background-secondary);">
+        <div class="conteudo-auxiliar">
+            <h2 class="titulo-secao">QUEM SOMOS</h2>
+            <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; max-width: 800px;">
+                A <strong>RDA Software</strong> nasceu com o propósito de suprir a demanda por sistemas complexos, elegantes e robustos. Unimos design corporativo refinado a uma infraestrutura de código impecável para criar plataformas estáveis e seguras.
+            </p>
+        </div>
+    </section>
 
-    <script src="assets/js/main.js"></script>
+    <section class="secao-adicional" id="contato">
+        <div class="conteudo-auxiliar">
+            <h2 class="titulo-secao">CONTATO</h2>
+            <p style="margin-bottom: 30px;">Entre em contato via: contato@rdasoftware.com.br</p>
+        </div>
+    </section>
+
+    <footer style="background: #020202; padding: 30px; text-align: center; border-top: 1px solid #232C38;">
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">&copy; 2026 RDA Software. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
