@@ -1,1 +1,110 @@
-.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #000000;
+    --background-secondary: #0d0d0d;
+    --text: #ffffff;
+    --text-secondary: #cfcfcf;
+    --primary: #1f7cff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,.15),
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.65),
+            #000000
+        ),
+        url("../img/banner/hero-banner.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 30px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: var(--primary);
+}
+
+.hero-content {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 130px 40px 220px;
+}
+
+.hero-content h1 {
+    max-width: 720px;
+
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    max-width: 600px;
+
+    font-size: 1.3rem;
+    line-height: 1.8;
+
+    color: var(--text-secondary);
+
+    margin-bottom: 45px;
+}
+
+.button {
+    display: inline
