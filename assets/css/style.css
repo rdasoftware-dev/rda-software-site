@@ -37,7 +37,7 @@ body {
 }
 
 /* ==========================================================================
-   2. HERO (BANNER PRINCIPAL)
+   2. HERO (BANNER PRINCIPAL) - ERRO DO DEGRADÊ CORRIGIDO PARA 100%
    ========================================================================== */
 .hero {
     position: relative;
@@ -51,7 +51,7 @@ body {
             rgba(5, 5, 5, 0.50) 0%,
             rgba(5, 5, 5, 0.70) 50%,
             rgba(5, 5, 5, 0.90) 85%,
-            #050505 100+
+            #050505 100%
         ),
         url("../img/banner/hero-banner.webp");
     background-repeat: no-repeat;
@@ -59,7 +59,6 @@ body {
     background-size: cover;
     background-color: var(--background);
 }
-
 /* ==========================================================================
    3. MENU DE NAVEGAÇÃO SUPERIOR
    ========================================================================== */
@@ -141,7 +140,6 @@ body {
     background: var(--primary-hover);
     transform: translateY(-2px);
 }
-
 /* ==========================================================================
    5. SEÇÕES COMPLEMENTARES E CARDS
    ========================================================================== */
@@ -203,13 +201,13 @@ body {
 }
 
 /* ==========================================================================
-   7. RESPONSIVIDADE MOBILE DETALHADA (RESOLVE O CORTE DA IMAGEM)
+   7. RESPONSIVIDADE MOBILE DETALHADA
    ========================================================================== */
 @media (max-width: 768px) {
     .hero {
         min-height: 100vh;
-        /* Altera a posição do fundo: joga a imagem 85% para a direita. 
-           Isso esconde o logotipo antigo repetido e foca nos grafismos azuis. */
+        /* Move o enquadramento do fundo para focar na textura abstrata azul 
+           e remove o logotipo borrado do fundo da visão do smartphone */
         background-position: 85% center;
     }
 
