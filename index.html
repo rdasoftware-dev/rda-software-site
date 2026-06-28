@@ -1,64 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>RDA Software</title>
-    <meta name="description" content="Desenvolvimento de software, soluções inteligentes e tecnologia.">
-
+    <title>RDA Software - Tecnologia que Transforma</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-    <header class="hero">
-
-        <nav class="menu">
-
-            <img src="assets/img/logo/logo-rda.webp"
-                 alt="RDA Software"
-                 class="logo">
-
-            <ul>
-
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Empresa</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-
-            </ul>
-
-        </nav>
-
-        <div class="hero-content">
-
-            <h1>
-                Tecnologia que transforma ideias em soluções.
-            </h1>
-
-            <p>
-                Desenvolvimento de software com foco em qualidade,
-                desempenho e inovação.
-            </p>
-
-            <a href="#" class="button">
-                Conheça nossos serviços
-            </a>
-
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-text">RDA <span>Software</span></div>
+            <nav class="nav-menu">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#solucoes" class="nav-link">Soluções</a>
+                <a href="#sobre" class="nav-link">Sobre Nós</a>
+                <a href="#contato" class="nav-btn">Contato</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
-
     </header>
 
+    <main>
+        <section id="inicio" class="hero-banner">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        TECNOLOGIA QUE <br>
+                        <span class="text-blue-gradient">TRANSFORMA IDEIAS</span> <br>
+                        EM SOLUÇÕES.
+                    </h1>
+                    <p class="hero-description">
+                        Desenvolvimento de software com foco em <span class="highlight-blue">qualidade</span>, <span class="highlight-blue">desempenho</span> e <span class="highlight-blue">inovação</span>.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#solucoes" class="btn-primary">Nossas Soluções</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solucoes" class="features-section">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">FOCO EM RESULTADOS</h3>
+                    <p class="feature-text">Soluções que geram valor real para o seu negócio.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">QUALIDADE GARANTIDA</h3>
+                    <p class="feature-text">Código limpo, testes e as melhores práticas do mercado.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="feature-title">INOVAÇÃO CONSTANTE</h3>
+                    <p class="feature-text">Tecnologias modernas para impulsionar seu crescimento.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3 class="feature-title">PARCERIA E CONFIANÇA</h3>
+                    <p class="feature-text">Transparência, comunicação e compromisso com você.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
