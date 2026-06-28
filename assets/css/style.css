@@ -1,6 +1,6 @@
-/* ===========================
-   RESET
-=========================== */
+/* ==========================================================================
+   RESET E CONFIGURAÇÕES GLOBAIS
+   ========================================================================== */
 
 * {
     margin: 0;
@@ -8,280 +8,84 @@
     box-sizing: border-box;
 }
 
-/* ===========================
-   VARIÁVEIS
-=========================== */
-
 :root {
-
     --background: #050505;
     --background-secondary: #0B0F14;
-
     --text: #FFFFFF;
     --text-secondary: #B8C2CC;
-
     --primary: #2F80ED;
     --primary-hover: #56A8FF;
-
 }
-
-/* ===========================
-   GERAL
-=========================== */
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-
     background: var(--background);
     color: var(--text);
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
-
 }
 
-/* ===========================
-   HERO
-=========================== */
+/* ==========================================================================
+   SEÇÃO HERO (MANTENDO SUA CONFIGURAÇÃO DE IMAGEM E DEGRADÊ)
+   ========================================================================== */
 
 .hero {
-
     position: relative;
-
     width: 100%;
     min-height: 85vh;
-
+    /* Certifique-se de que o arquivo se chama exatamente 'hero-banner.webp' nesta pasta */
     background-image:
         linear-gradient(
             to bottom,
-            rgba(6,16,40,.15) 0%,
-            rgba(6,16,40,.35) 35%,
-            rgba(5,5,5,.60) 70%,
+            rgba(6, 16, 40, 0.15) 0%,
+            rgba(6, 16, 40, 0.35) 35%,
+            rgba(5, 5, 5, 0.60) 70%,
             #050505 100%
         ),
         url("../img/banner/hero-banner.webp");
-
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-color: #050505;
-
+    background-color: var(--background);
 }
 
-/* ===========================
-   MENU
-=========================== */
+/* ==========================================================================
+   MENU DE NAVEGAÇÃO SUPERIOR
+   ========================================================================== */
 
 .menu {
-
     max-width: 1280px;
     margin: 0 auto;
-
     padding: 30px 40px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: relative;
+    z-index: 10;
 }
 
 .logo {
-
     height: 125px;
     width: auto;
-
 }
 
 .menu ul {
-
     display: flex;
     gap: 42px;
     list-style: none;
-
 }
 
 .menu a {
-
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
     transition: .25s;
-
 }
 
 .menu a:hover {
-
     color: var(--primary);
-
-}
-
-/* ===========================
-   TEXTO PRINCIPAL
-=========================== */
-
-.hero-content {
-
-    max-width: 1280px;
-
-    margin: 0 auto;
-
-    padding: 90px 40px 120px;
-
-}
-
-.hero-content h1 {
-
-    max-width: 760px;
-
-    font-size: clamp(3rem, 6vw, 5rem);
-
-    font-weight: 800;
-
-    line-height: 1.05;
-
-    margin-bottom: 28px;
-
-}
-
-.hero-content p {
-
-    max-width: 620px;
-
-    color: var(--text-secondary);
-
-    font-size: 1.3rem;
-
-    line-height: 1.8;
-
-    margin-bottom: 45px;
-
-}
-
-/* ===========================
-   BOTÃO
-=========================== */
-
-.button {
-
-    display: inline-block;
-
-    padding: 18px 36px;
-
-    border-radius: 12px;
-
-    background: var(--primary);
-
-    color: #FFFFFF;
-
-    text-decoration: none;
-
-    font-weight: 600;
-
-    transition: .25s;
-
-}
-
-.button:hover {
-
-    background: var(--primary-hover);
-
-}
-
-/* ===========================
-   TABLET
-=========================== */
-
-@media (max-width: 992px) {
-
-    .hero {
-        min-height: 75vh;
-    }
-
-    .menu {
-        padding: 20px;
-    }
-
-    .logo {
-        height: 95px;
-    }
-
-    .menu ul {
-        gap: 22px;
-    }
-
-    .hero-content {
-        padding: 70px 20px 80px;
-    }
-
-}
-
-/* ===========================
-   CELULAR
-=========================== */
-
-@media (max-width: 768px) {
-
-    .hero {
-
-        min-height: 70vh;
-
-        background-position: center top;
-
-    }
-
-    .menu {
-
-        flex-direction: column;
-
-        gap: 20px;
-
-        padding: 20px;
-
-    }
-
-    .logo {
-
-        height: 85px;
-
-    }
-
-    .menu ul {
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 18px;
-
-    }
-
-    .hero-content {
-
-        padding: 50px 20px 70px;
-
-    }
-
-    .hero-content h1 {
-
-        font-size: clamp(2.5rem, 11vw, 4rem);
-
-    }
-
-    .hero-content p {
-
-        font-size: 1.15rem;
-
-    }
-
-    .button {
-
-        width: 100%;
-
-        text-align: center;
-
-    }
-
 }
