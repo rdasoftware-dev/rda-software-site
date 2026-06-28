@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. RESET E CONFIGURAÇÕES GLOBAIS
+   1. RESET, VARIÁVEIS E CONFIGURAÇÕES GLOBAIS
    ========================================================================== */
 * {
     margin: 0;
@@ -30,7 +30,6 @@ body {
     line-height: 1.5;
 }
 
-/* Base de conteúdo centralizado */
 .conteudo-auxiliar {
     max-width: 1280px;
     margin: 0 auto;
@@ -38,21 +37,21 @@ body {
 }
 
 /* ==========================================================================
-   2. HERO (BANNER PRINCIPAL) - CORRIGIDO
+   2. HERO (BANNER PRINCIPAL)
    ========================================================================== */
 .hero {
     position: relative;
     width: 100%;
-    min-height: 100vh; /* Ocupa a tela cheia no desktop */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-image:
         linear-gradient(
             to bottom,
-            rgba(6, 16, 40, 0.40) 0%,
-            rgba(6, 16, 40, 0.60) 45%,
-            rgba(5, 5, 5, 0.85) 80%,
-            #050505 100%
+            rgba(5, 5, 5, 0.50) 0%,
+            rgba(5, 5, 5, 0.70) 50%,
+            rgba(5, 5, 5, 0.90) 85%,
+            #050505 100+
         ),
         url("../img/banner/hero-banner.webp");
     background-repeat: no-repeat;
@@ -62,7 +61,7 @@ body {
 }
 
 /* ==========================================================================
-   3. MENU DE NAVEGAÇÃO
+   3. MENU DE NAVEGAÇÃO SUPERIOR
    ========================================================================== */
 .menu {
     width: 100%;
@@ -99,19 +98,19 @@ body {
 }
 
 /* ==========================================================================
-   4. TEXTO DO HERO (Ajustado para não vazar)
+   4. TEXTO DO HERO E BOTÕES
    ========================================================================== */
 .hero-content {
     width: 100%;
     max-width: 1280px;
-    margin: auto auto; /* Centraliza verticalmente no espaço restante */
+    margin: auto auto;
     padding: 40px 40px 80px 40px;
     z-index: 5;
 }
 
 .hero-content h1 {
     max-width: 800px;
-    font-size: clamp(2.2rem, 5vw, 4.5rem); /* Diminuído para funcionar em celulares */
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 24px;
@@ -125,9 +124,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* ==========================================================================
-   5. BOTÕES
-   ========================================================================== */
 .button {
     display: inline-block;
     padding: 16px 32px;
@@ -147,14 +143,14 @@ body {
 }
 
 /* ==========================================================================
-   6. SEÇÕES ADICIONAIS (Correção do atropelamento de texto)
+   5. SEÇÕES COMPLEMENTARES E CARDS
    ========================================================================== */
 .secao-adicional {
     width: 100%;
-    padding: 100px 0; /* Espaçamento vertical generoso */
+    padding: 100px 0;
     background: var(--background);
     position: relative;
-    display: block; /* Garante o fluxo padrão do HTML */
+    display: block;
     clear: both;
 }
 
@@ -166,7 +162,6 @@ body {
     letter-spacing: -0.5px;
 }
 
-/* Grid Organizador dos Cards */
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -198,22 +193,24 @@ body {
 }
 
 /* ==========================================================================
-   7. RESPONSIVIDADE (TABLET)
+   6. RESPONSIVIDADE (TABLET E TELAS MEDIAS)
    ========================================================================== */
 @media (max-width: 992px) {
     .menu { padding: 20px 30px; }
     .hero-content { padding: 40px 30px; }
     .conteudo-auxiliar { padding: 0 30px; }
-    .grid-cards { grid-template-columns: 1fr; } /* Transforma em uma coluna única */
+    .grid-cards { grid-template-columns: 1fr; }
 }
 
 /* ==========================================================================
-   8. RESPONSIVIDADE (CELULAR - RESOLVE O SEU PRINT)
+   7. RESPONSIVIDADE MOBILE DETALHADA (RESOLVE O CORTE DA IMAGEM)
    ========================================================================== */
 @media (max-width: 768px) {
     .hero {
-        min-height: 100vh; /* Força o banner a ocupar toda a altura do celular */
-        background-position: 25% center; /* Move a imagem um pouco para o lado para focar na arte */
+        min-height: 100vh;
+        /* Altera a posição do fundo: joga a imagem 85% para a direita. 
+           Isso esconde o logotipo antigo repetido e foca nos grafismos azuis. */
+        background-position: 85% center;
     }
 
     .menu {
@@ -235,21 +232,21 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 2rem; /* Tamanho seguro para não quebrar linhas bruscamente */
+        font-size: 2.1rem;
         line-height: 1.2;
     }
 
     .hero-content p {
-        font-size: 1rem;
-        line-height: 1.5;
+        font-size: 1.05rem;
+        line-height: 1.6;
     }
 
     .button {
-        width: 100%; /* Botão largo para facilitar o clique no dedão */
+        width: 100%;
     }
 
     .secao-adicional {
-        padding: 60px 0; /* Ajusta o respiro entre seções no mobile */
+        padding: 60px 0;
     }
 
     .conteudo-auxiliar {
