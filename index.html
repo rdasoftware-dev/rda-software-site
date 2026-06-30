@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDA Software</title>
+    <meta name="description" content="RDA Software - Tecnologia gratuita, acessível e inteligente para todos.">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topo">
+    <a class="topo-logo-link" href="index.html" aria-label="RDA Software Home">
+        <img class="topo-logo" src="assets/img/logo/rdalogo.webp" alt="RDA Software">
+    </a>
+    <div class="topo-titulo">RDA Software</div>
+    <button class="menu-botao" id="menuBotao" type="button" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<nav class="menu-lateral" id="menuLateral" aria-label="Menu principal">
+    <a href="index.html" data-i18n="menuHome">Home</a>
+    <a href="sobre.html" data-i18n="menuSobre">Sobre...</a>
+    <a href="#aplicativos" data-i18n="menuApps">Aplicativos</a>
+    <details>
+        <summary data-i18n="menuIdioma">Idioma</summary>
+        <button class="idioma-btn" type="button" data-lang="pt-BR">Português</button>
+        <button class="idioma-btn" type="button" data-lang="en">English</button>
+        <button class="idioma-btn" type="button" data-lang="fr">Français</button>
+        <button class="idioma-btn" type="button" data-lang="es">Español</button>
+        <button class="idioma-btn" type="button" data-lang="de">Deutsch</button>
+        <button class="idioma-btn" type="button" data-lang="ru">Русский</button>
+        <button class="idioma-btn" type="button" data-lang="zh-CN">中文</button>
+    </details>
+</nav>
+<div class="menu-fundo" id="menuFundo"></div>
+
+<main>
+    <section class="hero-carrossel" aria-label="Banners RDA Software">
+        <div class="carrossel" id="carrosselRDA">
+            <img class="carrossel-img ativa" src="assets/img/banner/banner01.webp" alt="Banner RDA Software 1">
+            <img class="carrossel-img" src="assets/img/banner/banner02.webp" alt="Banner RDA Software 2">
+            <img class="carrossel-img" src="assets/img/banner/banner03.webp" alt="Banner RDA Software 3">
+        </div>
+    </section>
+
+    <section class="hero-intro">
+        <div class="container">
+            <h1 data-i18n="heroTitulo">Tecnologia gratuita, acessível e inteligente para todos.</h1>
+            <p data-i18n="heroSubtitulo">Desenvolvemos aplicativos Android gratuitos, simples e eficientes, com suporte multilíngue e foco em soluções úteis para o dia a dia.</p>
+        </div>
+    </section>
+
+    <section class="secao" id="aplicativos">
+        <h2 data-i18n="menuApps">Aplicativos</h2>
+        <div class="cards">
+            <article class="card"><h3 data-i18n="app01">RDAConverter</h3><p>Conversor de arquivos em desenvolvimento para Android.</p></article>
+            <article class="card"><h3 data-i18n="cardGratisTitulo">Aplicativos gratuitos</h3><p data-i18n="cardGratisTexto">Soluções Android para uso gratuito por qualquer pessoa.</p></article>
+            <article class="card"><h3 data-i18n="cardTecnologiaTitulo">Tecnologia com propósito</h3><p data-i18n="cardTecnologiaTexto">Ferramentas simples, úteis, acessíveis e pensadas para o dia a dia.</p></article>
+        </div>
+    </section>
+</main>
+
+<footer class="rodape">
+    <p>© <span id="anoAtual"></span> RDA Software</p>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
