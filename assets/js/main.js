@@ -50,20 +50,36 @@ function iniciarMenu() {
     function abrirMenu() {
         menu.classList.add("aberto");
         fundo.classList.add("aberto");
+        botao.setAttribute("aria-label", "Fechar menu");
     }
 
     function fecharMenu() {
         menu.classList.remove("aberto");
         fundo.classList.remove("aberto");
+        botao.setAttribute("aria-label", "Abrir menu");
     }
 
-    botao.addEventListener("click", abrirMenu);
+    function alternarMenu() {
+        if (menu.classList.contains("aberto")) {
+            fecharMenu();
+        } else {
+            abrirMenu();
+        }
+    }
+
+    botao.addEventListener("click", alternarMenu);
     fundo.addEventListener("click", fecharMenu);
 
     const links = menu.querySelectorAll("a");
 
     links.forEach(function (link) {
         link.addEventListener("click", fecharMenu);
+    });
+
+    document.addEventListener("keydown", function (evento) {
+        if (evento.key === "Escape") {
+            fecharMenu();
+        }
     });
 }
 
