@@ -276,22 +276,6 @@ body {
     color: var(--neon);
 }
 
-.autor {
-    padding-top: 150px;
-    text-align: center;
-    max-width: 900px;
-}
-
-.autor-foto {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid var(--neon);
-    box-shadow: 0 0 40px rgba(143, 212, 255, 0.35);
-    margin-bottom: 34px;
-}
-
 .rodape {
     padding: 38px 24px;
     text-align: center;
@@ -375,9 +359,4 @@ body {
         width: 86vw;
         right: -86vw;
     }
-
-    .autor-foto {
-        width: 180px;
-        height: 180px;
     }
-   }
