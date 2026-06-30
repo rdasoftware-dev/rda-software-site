@@ -4,33 +4,43 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>RDA Software</title>
+
+    <meta name="description" content="RDA Software - Tecnologia gratuita, acessível e inteligente para todos. Aplicativos Android gratuitos com suporte multilíngue.">
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
 <header class="topo">
-    <a class="topo-logo-link" href="https://rdasoftware.com.br" aria-label="RDA Software Home">
-        <img class="topo-logo" src="assets/img/logo/rda.webp" alt="RDA Software">
+    <a class="topo-logo-link" href="https://rdasoftware.com.br" aria-label="Ir para a página inicial da RDA Software">
+        <img
+            class="topo-logo"
+            src="assets/img/logo/rdalogo.webp"
+            alt="RDA Software"
+        >
     </a>
 
     <div class="topo-titulo">RDA Software</div>
 
-    <button class="menu-botao" id="menuBotao" aria-label="Abrir menu">
+    <button class="menu-botao" id="menuBotao" type="button" aria-label="Abrir menu">
         <span></span>
         <span></span>
         <span></span>
     </button>
 </header>
 
-<nav class="menu-lateral" id="menuLateral">
+<nav class="menu-lateral" id="menuLateral" aria-label="Menu principal">
     <a href="index.html" data-i18n="menuHome">Home</a>
     <a href="sobre.html" data-i18n="menuSobre">Sobre...</a>
 
     <details>
         <summary data-i18n="menuApps">Aplicativos</summary>
+
         <a href="#" data-i18n="app01">RDAConverter</a>
         <a href="#" data-i18n="app02">Aplicativo 02</a>
         <a href="#" data-i18n="app03">Aplicativo 03</a>
@@ -41,18 +51,22 @@
         <a href="#" data-i18n="app08">Aplicativo 08</a>
         <a href="#" data-i18n="app09">Aplicativo 09</a>
         <a href="#" data-i18n="app10">Aplicativo 10</a>
-        <span class="menu-aviso" data-i18n="maisApps">Mais aplicativos em desenvolvimento...</span>
+
+        <span class="menu-aviso" data-i18n="maisApps">
+            Mais aplicativos em desenvolvimento...
+        </span>
     </details>
 
     <details>
         <summary data-i18n="menuIdioma">Idioma</summary>
-        <button class="idioma-btn" data-lang="pt-BR">🇧🇷 Português</button>
-        <button class="idioma-btn" data-lang="en">🇺🇸 English</button>
-        <button class="idioma-btn" data-lang="fr">🇫🇷 Français</button>
-        <button class="idioma-btn" data-lang="es">🇪🇸 Español</button>
-        <button class="idioma-btn" data-lang="de">🇩🇪 Deutsch</button>
-        <button class="idioma-btn" data-lang="ru">🇷🇺 Русский</button>
-        <button class="idioma-btn" data-lang="zh-CN">🇨🇳 中文</button>
+
+        <button class="idioma-btn" type="button" data-lang="pt-BR">🇧🇷 Português</button>
+        <button class="idioma-btn" type="button" data-lang="en">🇺🇸 English</button>
+        <button class="idioma-btn" type="button" data-lang="fr">🇫🇷 Français</button>
+        <button class="idioma-btn" type="button" data-lang="es">🇪🇸 Español</button>
+        <button class="idioma-btn" type="button" data-lang="de">🇩🇪 Deutsch</button>
+        <button class="idioma-btn" type="button" data-lang="ru">🇷🇺 Русский</button>
+        <button class="idioma-btn" type="button" data-lang="zh-CN">🇨🇳 中文</button>
     </details>
 
     <a href="#" data-i18n="menuContato">Contato</a>
@@ -64,22 +78,25 @@
 
 <main>
 
-    <section class="hero-carrossel">
+    <section class="hero-carrossel" aria-label="Carrossel institucional RDA Software">
         <div class="carrossel" id="carrosselRDA">
 
-            <img class="carrossel-img ativa" src="assets/img/carrossel/banner-01.webp" alt="RDA Software">
-            <img class="carrossel-img" src="assets/img/carrossel/banner-02.webp" alt="RDA Software">
-            <img class="carrossel-img" src="assets/img/carrossel/banner-03.webp" alt="RDA Software">
-            <img class="carrossel-img" src="assets/img/carrossel/banner-04.webp" alt="RDA Software">
-            <img class="carrossel-img" src="assets/img/carrossel/banner-05.webp" alt="RDA Software">
-            <img class="carrossel-img" src="assets/img/carrossel/banner-06.webp" alt="RDA Software">
-            <img class="carrossel-img" src="assets/img/carrossel/banner-07.webp" alt="RDA Software">
-            <img class="carrossel-img" src="assets/img/carrossel/banner-08.webp" alt="RDA Software">
+            <img class="carrossel-img ativa" src="assets/img/carrossel/banner-01.webp" alt="Entrada futurista da RDA Software">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-02.webp" alt="Corredor tecnológico com servidores">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-03.webp" alt="Sala de servidores com holograma Linux">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-04.webp" alt="Infraestrutura cloud com hologramas">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-05.webp" alt="Fábrica de software com técnicos">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-06.webp" alt="Código em tela holográfica">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-07.webp" alt="Cliente satisfeita com resultados">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-08.webp" alt="Carro futurista saindo da RDA Software">
 
             <div class="carrossel-overlay"></div>
 
             <div class="hero-texto">
-                <h1 data-i18n="heroTitulo">Tecnologia gratuita, acessível e inteligente para todos.</h1>
+                <h1 data-i18n="heroTitulo">
+                    Tecnologia gratuita, acessível e inteligente para todos.
+                </h1>
+
                 <p data-i18n="heroSubtitulo">
                     Desenvolvemos aplicativos Android gratuitos, simples e eficientes, com suporte multilíngue e foco em soluções úteis para o dia a dia.
                 </p>
@@ -124,5 +141,6 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+
 </body>
 </html>
