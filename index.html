@@ -1,104 +1,128 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RDA Software</title>
-    <style>
-        /* CSS Embutido para garantir que nada quebre ou suma */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background-color: #050505; color: #FFFFFF; font-family: sans-serif; overflow-x: hidden; }
-        
-        /* O BANNER DO TOPO - Força a imagem a esticar 100% na largura em qualquer tela */
-        .banner-topo {
-            width: 100%;
-            height: auto;
-            min-height: 380px;
-            background-image: linear-gradient(180deg, rgba(5,5,5,0.2) 0%, #050505 100%), url("assets/img/banner/hero-banner.webp");
-            background-size: 100% 100%; /* Força o esticamento horizontal e vertical completo aos cantos */
-            background-repeat: no-repeat;
-            background-position: top center;
-            display: flex;
-            flex-direction: column;
-        }
 
-        .menu-superior {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background: rgba(11, 15, 20, 0.7);
-        }
-
-        .menu-superior ul { display: flex; gap: 30px; list-style: none; }
-        .menu-superior a { color: #FFFFFF; text-decoration: none; font-weight: bold; }
-
-        .conteudo-banner {
-            max-width: 800px;
-            margin: auto auto 40px 40px;
-            padding: 20px;
-        }
-
-        .conteudo-banner h1 { font-size: 2.5rem; margin-bottom: 15px; font-weight: 800; line-height: 1.2; }
-        .conteudo-banner p { color: #B8C2CC; font-size: 1.1rem; margin-bottom: 25px; max-width: 600px; }
-        .botao { display: inline-block; background-color: #2F80ED; color: #FFFFFF; padding: 14px 28px; text-decoration: none; font-weight: bold; border-radius: 6px; }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <section class="banner-topo">
-        <header class="menu-superior">
-            <h2>RDA SOFTWARE</h2>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Soluções</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </header>
+<header class="topo">
+    <a class="topo-logo-link" href="https://rdasoftware.com.br" aria-label="RDA Software Home">
+        <img class="topo-logo" src="assets/img/logo/rda.webp" alt="RDA Software">
+    </a>
 
-        <div class="conteudo-banner">
-            <h1>TECNOLOGIA QUE TRANSFORMA<br>IDEIAS EM SOLUÇÕES</h1>
-            <p>Desenvolvimento de software corporativo com foco absoluto em qualidade, desempenho e inovação.</p>
-            <a href="#" class="botao">Conhecer Soluções</a>
+    <div class="topo-titulo">RDA Software</div>
+
+    <button class="menu-botao" id="menuBotao" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<nav class="menu-lateral" id="menuLateral">
+    <a href="index.html" data-i18n="menuHome">Home</a>
+    <a href="sobre.html" data-i18n="menuSobre">Sobre...</a>
+
+    <details>
+        <summary data-i18n="menuApps">Aplicativos</summary>
+        <a href="#" data-i18n="app01">RDAConverter</a>
+        <a href="#" data-i18n="app02">Aplicativo 02</a>
+        <a href="#" data-i18n="app03">Aplicativo 03</a>
+        <a href="#" data-i18n="app04">Aplicativo 04</a>
+        <a href="#" data-i18n="app05">Aplicativo 05</a>
+        <a href="#" data-i18n="app06">Aplicativo 06</a>
+        <a href="#" data-i18n="app07">Aplicativo 07</a>
+        <a href="#" data-i18n="app08">Aplicativo 08</a>
+        <a href="#" data-i18n="app09">Aplicativo 09</a>
+        <a href="#" data-i18n="app10">Aplicativo 10</a>
+        <span class="menu-aviso" data-i18n="maisApps">Mais aplicativos em desenvolvimento...</span>
+    </details>
+
+    <details>
+        <summary data-i18n="menuIdioma">Idioma</summary>
+        <button class="idioma-btn" data-lang="pt-BR">🇧🇷 Português</button>
+        <button class="idioma-btn" data-lang="en">🇺🇸 English</button>
+        <button class="idioma-btn" data-lang="fr">🇫🇷 Français</button>
+        <button class="idioma-btn" data-lang="es">🇪🇸 Español</button>
+        <button class="idioma-btn" data-lang="de">🇩🇪 Deutsch</button>
+        <button class="idioma-btn" data-lang="ru">🇷🇺 Русский</button>
+        <button class="idioma-btn" data-lang="zh-CN">🇨🇳 中文</button>
+    </details>
+
+    <a href="#" data-i18n="menuContato">Contato</a>
+    <a href="#" data-i18n="menuPrivacidade">Privacidade</a>
+    <a href="#" data-i18n="menuTermos">Termos de uso</a>
+</nav>
+
+<div class="menu-fundo" id="menuFundo"></div>
+
+<main>
+
+    <section class="hero-carrossel">
+        <div class="carrossel" id="carrosselRDA">
+
+            <img class="carrossel-img ativa" src="assets/img/carrossel/banner-01.webp" alt="RDA Software">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-02.webp" alt="RDA Software">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-03.webp" alt="RDA Software">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-04.webp" alt="RDA Software">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-05.webp" alt="RDA Software">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-06.webp" alt="RDA Software">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-07.webp" alt="RDA Software">
+            <img class="carrossel-img" src="assets/img/carrossel/banner-08.webp" alt="RDA Software">
+
+            <div class="carrossel-overlay"></div>
+
+            <div class="hero-texto">
+                <h1 data-i18n="heroTitulo">Tecnologia gratuita, acessível e inteligente para todos.</h1>
+                <p data-i18n="heroSubtitulo">
+                    Desenvolvemos aplicativos Android gratuitos, simples e eficientes, com suporte multilíngue e foco em soluções úteis para o dia a dia.
+                </p>
+            </div>
+
         </div>
     </section>
-        /* Continuação do arquivo index.html */
-    <style>
-        .grid-pilares {
-            max-width: 1200px;
-            margin: 60px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-        .card-pilar {
-            background-color: #121821;
-            border: 1px solid #232C38;
-            padding: 30px;
-            border-radius: 8px;
-        }
-        .card-pilar h3 { margin-bottom: 10px; color: #FFFFFF; }
-        .card-pilar p { color: #B8C2CC; line-height: 1.6; }
-    </style>
 
-    <main class="grid-pilares">
-        <div class="card-pilar">
-            <h3>🎯 FOCO EM RESULTADOS</h3>
-            <p>Soluções estratégicas desenhadas sob medida para gerar valor real e otimizar processos.</p>
-        </div>
-        <div class="card-pilar">
-            <h3>🛡️ QUALIDADE GARANTIDA</h3>
-            <p>Código limpo, arquitetura escalável e aderência às melhores práticas de engenharia.</p>
-        </div>
-    </main>
+    <section class="secao">
+        <h2 data-i18n="sobreTitulo">Sobre a RDA Software</h2>
 
-    <footer style="background-color: #020202; padding: 25px; text-align: center; color: #7D8794; border-top: 1px solid #232C38;">
-        &copy; 2026 RDA Software. Todos os direitos reservados.
-    </footer>
+        <p data-i18n="sobreTexto1">
+            A RDA Software é um projeto dedicado à criação de soluções digitais úteis, gratuitas e acessíveis para Android.
+        </p>
 
+        <p data-i18n="sobreTexto2">
+            Nosso objetivo é desenvolver aplicativos leves, objetivos e traduzidos para múltiplos idiomas, permitindo que usuários de diferentes países tenham acesso a ferramentas práticas sem barreiras.
+        </p>
+    </section>
+
+    <section class="secao cards">
+        <article class="card">
+            <h3 data-i18n="cardGratisTitulo">Aplicativos gratuitos</h3>
+            <p data-i18n="cardGratisTexto">Soluções Android para uso gratuito por qualquer pessoa.</p>
+        </article>
+
+        <article class="card">
+            <h3 data-i18n="cardIdiomasTitulo">7 idiomas</h3>
+            <p data-i18n="cardIdiomasTexto">Português, Inglês, Francês, Espanhol, Alemão, Russo e Mandarim.</p>
+        </article>
+
+        <article class="card">
+            <h3 data-i18n="cardTecnologiaTitulo">Tecnologia com propósito</h3>
+            <p data-i18n="cardTecnologiaTexto">Ferramentas simples, úteis, acessíveis e pensadas para o dia a dia.</p>
+        </article>
+    </section>
+
+</main>
+
+<footer class="rodape">
+    <p>© <span id="anoAtual"></span> RDA Software</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
-    
