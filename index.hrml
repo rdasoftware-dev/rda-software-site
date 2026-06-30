@@ -35,5 +35,5 @@
 </header>
 
 <nav class="menu-lateral" id="menuLateral" aria-label="Menu principal">
-    <a href="index.html" data-i18n="menuHome">Home</a>
-    <a href="sobre.html" data-i18
+    <a href="rdasoftware.com.br" data-i18n="menuHome">Home</a>
+    <a href="rdasoftware.com.br/sobre.html" data-i18
