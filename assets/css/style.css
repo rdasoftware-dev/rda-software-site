@@ -195,59 +195,59 @@ body {
     background:
         linear-gradient(
             to bottom,
-            rgba(5, 5, 5, 0.20) 0%,
-            rgba(5, 5, 5, 0.10) 40%,
-            rgba(5, 5, 5, 0.92) 100%
-        ),
-        linear-gradient(
-            to right,
-            rgba(5, 5, 5, 0.68) 0%,
-            rgba(5, 5, 5, 0.12) 45%,
+            rgba(5, 5, 5, 0.08) 0%,
+            rgba(5, 5, 5, 0.04) 45%,
             rgba(5, 5, 5, 0.55) 100%
         );
     pointer-events: none;
 }
 
-.hero-texto {
-    position: absolute;
-    left: 6%;
-    bottom: 80px;
-    z-index: 3;
-    max-width: 760px;
+.hero-intro {
+    padding: 64px 24px 36px;
+    background: var(--background);
+    text-align: center;
 }
 
-.hero-texto h1 {
-    font-size: clamp(2.2rem, 5vw, 5.4rem);
-    line-height: 1;
-    margin-bottom: 22px;
-    font-weight: 900;
-    text-shadow: 0 0 28px rgba(47, 128, 237, 0.55);
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.hero-texto p {
-    font-size: clamp(1rem, 2vw, 1.35rem);
-    line-height: 1.55;
+.hero-intro h1 {
+    font-size: clamp(1.75rem, 3vw, 2.7rem);
+    line-height: 1.18;
+    margin-bottom: 18px;
+    font-weight: 800;
+    color: var(--text);
+    text-shadow: 0 0 20px rgba(47, 128, 237, 0.35);
+}
+
+.hero-intro p {
+    font-size: clamp(0.98rem, 1.4vw, 1.15rem);
+    line-height: 1.75;
     color: var(--text-secondary);
-    max-width: 680px;
+    max-width: 760px;
+    margin: 0 auto;
 }
 
 .secao {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 90px 28px;
+    padding: 72px 28px;
 }
 
 .secao h2,
 .secao h1 {
-    font-size: clamp(2rem, 4vw, 3.6rem);
-    margin-bottom: 28px;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    margin-bottom: 24px;
     color: var(--text);
 }
 
 .secao p {
     color: var(--text-secondary);
-    font-size: 1.12rem;
-    line-height: 1.8;
+    font-size: 1.05rem;
+    line-height: 1.75;
     margin-bottom: 18px;
 }
 
@@ -255,6 +255,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    padding-top: 42px;
 }
 
 .card {
@@ -266,14 +267,19 @@ body {
         );
     border: 1px solid var(--border);
     border-radius: 22px;
-    padding: 34px;
+    padding: 30px;
     box-shadow: 0 0 38px rgba(47, 128, 237, 0.10);
 }
 
 .card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 16px;
+    font-size: 1.25rem;
+    margin-bottom: 14px;
     color: var(--neon);
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.65;
 }
 
 .rodape {
@@ -322,14 +328,12 @@ body {
         min-height: 500px;
     }
 
-    .hero-texto {
-        left: 24px;
-        right: 24px;
-        bottom: 48px;
+    .hero-intro {
+        padding: 48px 22px 28px;
     }
 
     .secao {
-        padding: 70px 24px;
+        padding: 58px 24px;
     }
 }
 
@@ -343,20 +347,25 @@ body {
     }
 
     .carrossel {
-        height: 68vh;
-        min-height: 430px;
+        height: 66vh;
+        min-height: 410px;
     }
 
-    .hero-texto h1 {
-        font-size: 2.1rem;
+    .hero-intro h1 {
+        font-size: 1.65rem;
     }
 
-    .hero-texto p {
-        font-size: 0.98rem;
+    .hero-intro p {
+        font-size: 0.96rem;
+        line-height: 1.65;
     }
 
     .menu-lateral {
         width: 86vw;
         right: -86vw;
+    }
+
+    .secao p {
+        font-size: 1rem;
     }
     }
