@@ -102,6 +102,14 @@ function iniciarIdiomas() {
 
             localStorage.setItem("rdaIdioma", idioma);
             aplicarIdioma(idioma);
+
+            document.getElementById("menuLateral").classList.remove("aberto");
+            document.getElementById("menuFundo").classList.remove("aberto");
+            document.getElementById("menuBotao").setAttribute("aria-expanded", "false");
+            document.getElementById("menuBotao").setAttribute(
+              "aria-label",
+              traduzirTexto("ariaAbrirMenu")
+              );
         });
     });
 }
