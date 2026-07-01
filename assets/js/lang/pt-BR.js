@@ -22,6 +22,7 @@ window.RDA_I18N["pt-BR"] = {
     "app08": "Aplicativo 08",
     "app09": "Aplicativo 09",
     "app10": "Aplicativo 10",
+    "appRDAConverterTexto": "Aplicativo Android para conversão de formatos de arquivos, incluindo imagens, vídeos, áudios e alguns textos, como TXT e PDF. Entre os formatos previstos estão WEBP, JPG, PNG, PDF, MP4, WEBM, MOV, AVI, MKV, 3GP, MP3, WAV, OGG, FLAC, TXT e outros formatos populares.",
     "sobreEtiqueta": "Institucional",
     "sobreTituloPagina": "Empresa",
     "bioTexto1": "Robson Dantas de Aguiar é desenvolvedor independente e fundador da RDA Software, um projeto dedicado à criação de soluções digitais úteis, gratuitas e acessíveis para Android.",
