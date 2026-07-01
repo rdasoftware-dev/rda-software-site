@@ -4,30 +4,22 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>RDA Software</title>
-
-    <meta name="description" content="RDA Software - Tecnologia gratuita, acessível e inteligente para todos. Aplicativos Android gratuitos com suporte multilíngue.">
-
-    <link rel="stylesheet" href="assets/css/style.css?v=3">
+    <meta name="description" content="RDA Software - Tecnologia gratuita, acessível e inteligente para todos.">
+    <link rel="stylesheet" href="assets/css/style.css?v=1">
 </head>
 
 <body>
 
 <header class="topo">
-    <a class="topo-logo-link" href="index.html" aria-label="Ir para a página inicial da RDA Software">
-        <img
-            class="topo-logo"
-            src="assets/img/logo/rdalogo.webp"
-            alt="RDA Software"
-        >
+    <a class="topo-logo-link" href="index.html" aria-label="Ir para a página inicial da RDA Software" data-i18n-aria="ariaHome">
+        <img class="topo-logo" src="assets/img/logo/rdalogo.webp" alt="RDA Software">
     </a>
 
     <div class="topo-titulo">RDA Software</div>
 
-    <button class="menu-botao" id="menuBotao" type="button" aria-label="Abrir menu">
+    <button class="menu-botao" id="menuBotao" type="button" aria-label="Abrir menu" data-i18n-aria="ariaAbrirMenu">
         <span></span>
         <span></span>
         <span></span>
@@ -36,21 +28,8 @@
 
 <nav class="menu-lateral" id="menuLateral" aria-label="Menu principal">
     <a href="index.html" data-i18n="menuHome">Home</a>
-    <a href="sobre.html" data-i18n="menuSobre">Sobre...</a>
-
-    <details>
-        <summary data-i18n="menuApps">Aplicativos</summary>
-        <a href="#aplicativos" data-i18n="app01">RDAConverter</a>
-        <a href="#aplicativos" data-i18n="app02">Aplicativo 02</a>
-        <a href="#aplicativos" data-i18n="app03">Aplicativo 03</a>
-        <a href="#aplicativos" data-i18n="app04">Aplicativo 04</a>
-        <a href="#aplicativos" data-i18n="app05">Aplicativo 05</a>
-        <a href="#aplicativos" data-i18n="app06">Aplicativo 06</a>
-        <a href="#aplicativos" data-i18n="app07">Aplicativo 07</a>
-        <a href="#aplicativos" data-i18n="app08">Aplicativo 08</a>
-        <a href="#aplicativos" data-i18n="app09">Aplicativo 09</a>
-        <a href="#aplicativos" data-i18n="app10">Aplicativo 10</a>
-    </details>
+    <a href="sobre.html" data-i18n="menuSobre">Sobre</a>
+    <a href="contato.html" data-i18n="menuContato">Contato</a>
 
     <details>
         <summary data-i18n="menuIdioma">Idioma</summary>
@@ -62,10 +41,6 @@
         <button class="idioma-btn" type="button" data-lang="ru">Русский</button>
         <button class="idioma-btn" type="button" data-lang="zh-CN">中文</button>
     </details>
-
-    <a href="#contato" data-i18n="menuContato">Contato</a>
-    <a href="#privacidade" data-i18n="menuPrivacidade">Privacidade</a>
-    <a href="#termos" data-i18n="menuTermos">Termos de uso</a>
 </nav>
 
 <div class="menu-fundo" id="menuFundo"></div>
@@ -92,13 +67,19 @@
         </div>
     </section>
 
-    <section class="secao" id="aplicativos">
+    <section class="secao">
+        <h2 data-i18n="sobreTitulo">Empresa</h2>
+        <p data-i18n="sobreTexto1">A RDA Software é um projeto dedicado à criação de soluções digitais úteis, gratuitas e acessíveis para Android.</p>
+        <p data-i18n="sobreTexto2">Nosso objetivo é desenvolver aplicativos leves, objetivos e traduzidos para múltiplos idiomas, permitindo que usuários de diferentes países tenham acesso a ferramentas práticas sem barreiras.</p>
+    </section>
+
+    <section class="secao">
         <h2 data-i18n="menuApps">Aplicativos</h2>
 
         <div class="cards">
             <article class="card">
                 <h3 data-i18n="app01">RDAConverter</h3>
-                <p>Conversor de arquivos em desenvolvimento para Android, com foco em simplicidade, utilidade e acessibilidade.</p>
+                <p data-i18n="cardTecnologiaTexto">Ferramentas simples, úteis, acessíveis e pensadas para o dia a dia.</p>
             </article>
 
             <article class="card">
@@ -112,35 +93,19 @@
             </article>
         </div>
     </section>
-
-    <section class="secao" id="sobre">
-        <h2 data-i18n="sobreTitulo">Sobre a RDA Software</h2>
-
-        <p data-i18n="sobreTexto1">A RDA Software é um projeto dedicado à criação de soluções digitais úteis, gratuitas e acessíveis para Android.</p>
-
-        <p data-i18n="sobreTexto2">Nosso objetivo é desenvolver aplicativos leves, objetivos e traduzidos para múltiplos idiomas, permitindo que usuários de diferentes países tenham acesso a ferramentas práticas sem barreiras.</p>
-    </section>
-
-    <section class="secao" id="contato">
-        <h2 data-i18n="menuContato">Contato</h2>
-        <p>Em breve, esta área terá os canais oficiais de contato da RDA Software.</p>
-    </section>
-
-    <section class="secao" id="privacidade">
-        <h2 data-i18n="menuPrivacidade">Privacidade</h2>
-        <p>Em breve, esta área terá a política de privacidade oficial da RDA Software.</p>
-    </section>
-
-    <section class="secao" id="termos">
-        <h2 data-i18n="menuTermos">Termos de uso</h2>
-        <p>Em breve, esta área terá os termos de uso oficiais da RDA Software.</p>
-    </section>
 </main>
 
 <footer class="rodape">
     <p>© <span id="anoAtual"></span> RDA Software</p>
 </footer>
 
-<script src="assets/js/main.js?v=3"></script>
+<script src="assets/js/lang/pt-BR.js?v=1"></script>
+<script src="assets/js/lang/en.js?v=1"></script>
+<script src="assets/js/lang/fr.js?v=1"></script>
+<script src="assets/js/lang/es.js?v=1"></script>
+<script src="assets/js/lang/de.js?v=1"></script>
+<script src="assets/js/lang/ru.js?v=1"></script>
+<script src="assets/js/lang/zh-CN.js?v=1"></script>
+<script src="assets/js/main.js?v=1"></script>
 </body>
 </html>
